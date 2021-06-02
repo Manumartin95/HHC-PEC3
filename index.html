@@ -4,7 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    body {
+        margin: 0;
+        color: #1f1f1f;
+        font-family: Montserrat
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700
+    }
+
+    .border-top {
+        background-color: #009eae;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .logo-text {
+        grid-area: text
+    }
+
+    .link-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-left: 0
+    }
+
+    .link-item {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        -webkit-animation: slideIn 1s cubic-bezier(.25,.46,.45,.94);
+        animation: slideIn 1s cubic-bezier(.25,.46,.45,.94)
+    }
+
+    .link {
+        color: #33b1be;
+        font-size: 1.4rem;
+        position: relative;
+        padding-bottom: .5rem
+    }
+
+    .link:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: .2rem;
+        background-color: #33b1be;
+        transition: width .5s ease-in
+    }
+
+    .lema {
+        font-weight: 400;
+        font-size: 1.5rem;
+        font-style: italic
+    }
+
+    .test {
+        grid-area: left-img;
+        -webkit-clip-path: polygon(100% 0,0 100%,0 0);
+        clip-path: polygon(100% 0,0 100%,0 0)
+    }
+
+    .test,.test2 {
+        max-width: 100%
+    }
+
+    .test2 {
+        grid-area: right-img;
+        -webkit-clip-path: polygon(100% 0,0 100%,100% 100%);
+        clip-path: polygon(100% 0,0 100%,100% 100%)
+    }
+
+    .no-decoration {
+        text-decoration: none
+    }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">    
     <title>Caribean Food</title>
@@ -40,6 +130,6 @@
                     </li>
                 </ul>
             </div>
-    <script async src="./index.js"></script>
+    <script src="./index.js" async></script>
 </body>
 </html>
