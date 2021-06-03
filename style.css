@@ -158,7 +158,7 @@ main{
 
 @media screen and (max-width:39rem){
     .test, .test2{
-        height: auto;
+        height: 221px;
     }
 }
 
