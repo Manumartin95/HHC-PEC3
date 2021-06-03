@@ -150,13 +150,17 @@ main{
     .border-top{
         background-color: #009eae;
         display: grid;
-        grid-template-areas:"left-img . ."
-                            ". text ."
-                            ". . right-img"
+        grid-template-areas:"left-img left-img . ."
+                            ". text text ."
+                            ". . right-img right-img"
     }    
 }
 
-
+@media screen and (max-width:39rem){
+    .test, .test2{
+        height: auto;
+    }
+}
 
 .logo-text{
     grid-area: text;
@@ -209,13 +213,11 @@ main{
 
 .test{
     grid-area: left-img;
-    max-width: 100%;
     clip-path: polygon(100% 0, 0 100%, 0 0);
 }
 
 .test2{
     grid-area: right-img;
-    max-width: 100%;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
