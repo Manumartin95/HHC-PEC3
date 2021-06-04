@@ -8,7 +8,7 @@
     body {
         margin: 0;
         color: #1f1f1f;
-        font-family: Montserrat
+        font-family: 'Montserrat';
     }
 
     .logo-text {
@@ -20,6 +20,12 @@
         font-weight: 700
     }
 
+    @media screen and (max-width: 40rem) {
+        .logo-text {
+            font-size:1rem
+        }
+    }
+
     .border-top {
         background-color: #009eae;
         display: flex;
@@ -27,6 +33,13 @@
         align-items: center;
         justify-content: space-between
     }
+
+    @media screen and (max-width: 39rem) {
+        .test,.test2 {
+            height:auto;
+        }
+    }
+
 
     .logo-text {
         grid-area: text
@@ -77,10 +90,6 @@
         grid-area: left-img;
         -webkit-clip-path: polygon(100% 0,0 100%,0 0);
         clip-path: polygon(100% 0,0 100%,0 0)
-    }
-
-    .test,.test2 {
-        max-width: 100%
     }
 
     .test2 {
