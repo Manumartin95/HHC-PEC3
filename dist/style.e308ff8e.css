@@ -4764,7 +4764,7 @@ main{
     justify-content: space-between;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 115rem) {
+@media screen and (min-width: 40rem) and (max-width: 118rem) {
     .border-top{
         background-color: #009eae;
         display: grid;
