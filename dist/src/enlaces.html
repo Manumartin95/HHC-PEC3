@@ -4,8 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <style>body {
+            margin: 0;
+            color: #1f1f1f;
+            font-family: Montserrat
+        }
+
+        main {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%
+        }
+
+        .header {
+            background-color: #009eae;
+            opacity: .8;
+            color: #fff;
+            justify-content: space-between;
+            padding: 0 30px
+        }
+
+        .header,.header-list {
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.3rem;
+            justify-content: center
+        }
+
+        .active,.nav-item:hover {
+            font-weight: 700;
+            border-bottom: 4px solid #fff
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            flex-wrap: wrap
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700
+        }
+
+        .logo-img {
+            width: 7rem
+        }
+
+        .footer {
+            background-color: #757575;
+            color: #fff;
+            text-align: center;
+            margin-top: 5%;
+            padding: 20px
+        }
+
+        .footer-logo {
+            width: 70px;
+            color: #fff
+        }
+
+        .footer-list {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0
+        }
+
+        .footer-item {
+            margin: .3rem;
+            padding: .3rem
+        }
+
+        .footer-item a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .logo-text {
+            grid-area: text
+        }
+
+        .link-list a {
+            position: relative;
+            display: inline-block;
+            color: #33b1be;
+            font-weight: 800
+        }
+
+        .link-list a:before {
+            position: absolute;
+            content: attr(data-content);
+            top: 0;
+            left: 0;
+            color: #191970;
+            text-decoration: underline;
+            overflow: hidden;
+            transition: width 275ms ease;
+            width: 0;
+            white-space: nowrap
+        }
+
+        .link-element,.link-subtitle {
+            -webkit-animation: bounceLeft 1s ease-in forwards;
+            animation: bounceLeft 1s ease-in forwards;
+            opacity: 0
+        }
+
+        .link-element {
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s
+        }
+
+        .no-decoration {
+            text-decoration: none
+        }
+
+        .title {
+            color: #016a75;
+            width: 55%;
+            font-size: 2rem;
+            position: relative
+        }
+
+        .title:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: .2rem;
+            background-color: #016a75;
+            -webkit-animation: leftTo .5s ease-in;
+            animation: leftTo .5s ease-in
+        }
+
+        h2 {
+            font-size: 1.7rem
+        }</style>
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap">  
+    <link rel="preload" href="/style.e308ff8e.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap">
+        <link rel="stylesheet" href="/style.e308ff8e.css">
+    </noscript>
+
     <title>Document</title>
 </head>
 <body>
