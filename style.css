@@ -150,16 +150,10 @@ main{
     .border-top{
         background-color: #009eae;
         display: grid;
-        grid-template-areas:"left-img left-img . ."
-                            ". text text ."
-                            ". . right-img right-img"
+        grid-template-areas:"left-img . ."
+                            ". text ."
+                            ". . right-img"
     }    
-}
-
-@media screen and (max-width:39rem){
-    .test, .test2{
-        height: auto;
-    }
 }
 
 .logo-text{
@@ -209,6 +203,11 @@ main{
     font-weight: 400;
     font-size: 1.5rem;
     font-style: italic;
+}
+
+.test, .test2{
+    max-width: 100%;
+    height: auto;
 }
 
 .test{
