@@ -4705,7 +4705,7 @@ main{
 }
 
 @media screen and (max-width: 40rem){
-    .logo-text{
+    .border-top .logo-text{
         font-size: 1rem;
     }
 }
